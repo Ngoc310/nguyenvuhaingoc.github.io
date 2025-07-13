@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Hanwha Life Esport</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+
+-->
+<style>
+  body {
+    background-color: #fef6f0;
+  }
+  h1 {
+    color: #ff6600;
+  }
+  .header-text h2 {
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+  </head>
+
+<body>
+
+  <script>
+window.alert("Welcome to Hanwha Life Esports! WE ARE HLE!");
+</script>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>HLE</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Serach Start ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Serach Start ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#team">Team</a></li>
+                      <li class="scroll-to-section"><a href="#events">Matches</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Goods</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Membership</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Our Team</span>
+                <h2>"Great Challengers"</h2>
+                <p>The 2025 slogan of Hanwha Life Esports encapsulates the team's drive and ambition to challenge and grow toward greater goals. Our first victory is just the beginning; as "Great Challengers" we will face new challenges at every moment and create a more remarkable history through this journey.
+Our goal is to transcend boundaries and establish ourselves as the epitome of "challenge" becoming a team synonymous with the spirit of perseverance and determination.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="https://hle.kr/en" target="_blank">More Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Tournaments Result</span>
+                <h2>2025 LCK Cup & First Stand Champion</h2>
+                <p>Hanwha Life Esports made history by claiming the LCK Cup Championship, showcasing their growth, synergy, and elite performance against Korea’s top-tier teams. They also secured the title of First Stand Champions, proving their dominance in pre-season play and setting the tone for the competitive year ahead.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="https://lol.fandom.com/wiki/Hanwha_Life_Esports/Tournament_Results" target="_blank">More Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="header-text">
+                <span class="category">Global Events</span>
+                <h2>2025 HLE Global Fan Fest in Vietnam</h2>
+                <p>Hanwha Life Esports is hosting its 2025 Global Fanfest in Vietnam! Fans can look forward to meeting the team, exclusive showmatches, merch drops, and unforgettable moments celebrating HLE’s journey with the global community.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="https://hle.fan/contents/683929aa7788db34daae1619" target="_blank">More Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin: 30px 0;">
+  <h3>Fan Greeting</h3>
+  <input type="text" id="fanName" placeholder="Enter your name">
+  <button onclick="greetFan()">Greet Me!</button>
+  <p id="greetingMessage"></p>
+</div>
+
+<script>
+  function greetFan() {
+    const name = document.getElementById('fanName').value;
+    const message = name ? `Welcome, ${name}! Let's cheer for HLE!` : "Please enter your name!";
+    document.getElementById('greetingMessage').innerText = message;
+  }
+</script>
+
+
+  <div class="team section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+          <h6>Our Team</h6>
+          <h2>2025 Roster</h2>
+          </div>
+        </div>  
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-01.jpg" alt="">
+              <span class="category">Top Laner</span>
+              <h4>Choi Woo Je</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/godthunderzeus/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://op.gg/lol/summoners/kr/Spring-bomm" target="_blank" class="custom-letter-icon opgg">G</a></li>
+                <li><a href="https://chzzk.naver.com/434479f33f8afd5bb5089ce4b61babe4" target="_blank" class="custom-letter-icon chzzk">Z</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-02.jpg" alt="">
+              <span class="category">Jungle</span>
+              <h4>Han Wangho</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/wanghohan98/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://op.gg/lol/summoners/kr/Peanut-kr11" target="_blank" class="custom-letter-icon opgg">G</a></li>
+                <li><a href="https://chzzk.naver.com/6af9b9d8a98e627294a1a9fca8b0cead" target="_blank" class="custom-letter-icon chzzk">Z</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-03.jpg" alt="">
+              <span class="category">Mid Laner</span>
+              <h4>Kim Geon Woo</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/kkaze1128/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://op.gg/lol/summoners/kr/dlwldms-iuiu" target="_blank" class="custom-letter-icon opgg">G</a></li>
+                <li><a href="https://chzzk.naver.com/a121dab6835c0613dd5f8ef5acd1f155" target="_blank" class="custom-letter-icon chzzk">Z</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-04.jpg" alt="">
+              <span class="category">AD Carry</span>
+              <h4>Park Do Hyeon</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/viper3lol/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://op.gg/lol/summoners/kr/Blue-KR33" target="_blank" class="custom-letter-icon opgg">G</a>
+                <li><a href="https://chzzk.naver.com/f59a5b026c2e9ad339f9eca423a6af98" target="_blank" class="custom-letter-icon chzzk">Z</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-05.jpg" alt="">
+              <span class="category">Support</span>
+              <h4>Yoo Hwan Jung</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/lol_delight/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://op.gg/lol/summoners/kr/플레이리스트겨울-KR1" target="_blank" class="custom-letter-icon opgg">G</a></li>
+                <li><a href="https://chzzk.naver.com/59dd654778e3d0b64f3ed06baece805d" target="_blank" class="custom-letter-icon chzzk">Z</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-06.jpg" alt="">
+              <span class="category"> Team's Head Coach</span>
+              <h4>Choi In Kyu</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.instagram.com/hle.official/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/hleofficial" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/HLE.lol" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div>
+      </div>
+    </div>
+  </div>      
+
+  <div class="section testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="owl-carousel owl-testimonials">
+            <div class="item">
+              <p>“Look at how these two coordinate—Zeus is such a menace in lane, and Peanut just enables everything in the jungle.”</p>
+              <div class="author">
+                <img src="assets/images/commentor.jpg" alt="">
+                <span class="category">During the HLE vs TES mactch, comment on Zeus and Peanut</span>
+                <h4>Commentor Azael</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“Top laner Choi ‘Zeus’ Woo-je earned the title of MVP… his selection of Aatrox in game three proved to be pivotal… recording a 7/0/4 KDA.”</p>
+              <div class="author">
+                <img src="assets/images/commentor 2.jpg" alt="">
+                <span class="category">Comment on Zeus at the LCK Cup Finals</span>
+                <h4>Jonno Nicholson</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“HLE are absolutely dominating the river right now — Peanut is everywhere, and Zeus is cleaning up!”</p>
+              <div class="author">
+                <img src="assets/images/Commentor 3.jpg" alt="">
+                <span class="category">During a pivotal Baron dance</span>
+                <h4>Panky</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“This is textbook HLE — perfect spacing from Viper and Delight, and that fight was Peanut‑orchestrated!”</p>
+              <div class="author">
+                <img src="assets/images/Commentor 4.jpg" alt="">
+                <span class="category">In reaction to a teamfight clutch</span>
+                <h4>MonteCristo</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“Zeka's Viktor pick is an absolute laser beam—nailing every skill shot!”</p>
+              <div class="author">
+                <img src="assets/images/Hình ảnh 4.jpg" alt="">
+                <span class="category">Following a key mid-laner skirmish</span>
+                <h4>DoA</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>This is HLE!</h6>
+          </div>
+          <div class="container text-center" style="margin-top: 10px;">
+            <div class="ratio ratio-16x9">
+              <iframe width="570" height="325" src="https://www.youtube.com/embed/dTCvdWVZ4AQ?si=_QEsHXfS6H4N3tjp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section events" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Schedule</h6>
+            <h2>Upcoming Matches</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/GEN vs HLE.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">2025 LCK Round 3-5</span>
+                    <h4>GEN vs HLE</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>23 Jul 2025 - 7PM</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>BO3</h6>
+                  </li>
+                  <li>
+                    <span>Place:</span>
+                    <h6>LOL Park</h6>
+                  </li>
+                </ul>
+                <a href="https://www.youtube.com/@LCKglobal/featured" target="_blank"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/HLE vs KT.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">2025 LCK Round 3-5</span>
+                    <h4>HLE vs KT</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>26 Jul 2025 - 5PM</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>BO3</h6>
+                  </li>
+                  <li>
+                    <span>Place:</span>
+                    <h6>LOL Park</h6>
+                  </li>
+                </ul>
+                <a href="https://www.youtube.com/@LCKglobal/featured" target="_blank"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/NS vs HLE.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">2025 LCK Round 3-5</span>
+                    <h4>NS vs HLE</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>31 Jul 2025 - 7PM</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>BO3</h6>
+                  </li>
+                  <li>
+                    <span>Place:</span>
+                    <h6>LOL Park</h6>
+                  </li>
+                </ul>
+                <a href="https://www.youtube.com/@LCKglobal/featured" target="_blank"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="courses" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Goods</h6>
+            <h2>Latest Merchandise</h2>
+          </div>
+        </div>
+      </div>
+      <ul class="event_filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".Uniform">Uniform</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".Apparel">Apparel</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".Accessories">Accessories</a>
+        </li>
+      </ul>
+      <div class="row event_box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 Uniform">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://wbplay.cafe24.com/shop2/product/hle-25-hle-summer-authentic-jacket-white/681/category/34/display/1/" target="new"><img src="assets/images/jacket.jpg" alt=""></a>
+              <span class="category">Jacket</span>
+              <span class="price"><h6><em>$</em>131.62</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">HLE 2025</span>
+              <h4>Summer Authentic Jacket</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 Uniform">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://wbplay.cafe24.com/shop2/product/hle-25-hle-street-uniform/583/category/34/display/1/" target="new"><img src="assets/images/jersey.jpg" alt=""></a>
+              <span class="category">Jersey</span>
+              <span class="price"><h6><em>$</em>72.79</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">HLE 2025</span>
+              <h4>Street Uniform</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 Apparel Uniform">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://wbplay.cafe24.com/shop2/product/hle-25-hle-street-uniform-marking-kit/582/category/34/display/1/" target="new"><img src="assets/images/marking kit.jpg" alt=""></a>
+              <span class="category">Marking kit</span>
+              <span class="price"><h6><em>$</em>11.76</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">HLE 2025</span>
+              <h4>Street Uniform Marking kit</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 Apparel">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://wbplay.cafe24.com/shop2/product/hle-25-hle-slogan-t-shirts/408/category/35/display/1/" target="new"><img src="assets/images/T-shirt.jpg" alt=""></a>
+              <span class="category">T-shirt</span>
+              <span class="price"><h6><em>$</em>28.68</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">HLE 2025</span>
+              <h4>Slogan T-shirt</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 Accessories">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://wbplay.cafe24.com/shop2/product/hle-25-hle-cube-keychain/490/category/49/display/1/" target="new"><img src="assets/images/Keychain.jpg" alt=""></a>
+              <span class="category">Keychain</span>
+              <span class="price"><h6><em>$</em>11.03</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">HLE 2025</span>
+              <h4>Cube Keychain</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 Accessories">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://wbplay.cafe24.com/shop2/product/hle-25-hle-photo-mouse-pad/491/category/49/display/1/" target="new"><img src="assets/images/Mouse Pad.jpg" alt=""></a>
+              <span class="category">Mouse Pad</span>
+              <span class="price"><h6><em>$</em>5.15</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">HLE 2025</span>
+              <h4>Photo Mouse Pad</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6  align-self-center">
+          <div class="section-heading">
+            <h6>Membership</h6>
+            <h2>Feel free to join the fan community anytime</h2>
+            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
+            <div class="special-offer">
+              <span class="offer">2025<br><em>HLE</em></span>
+              <h4>Click here to find out more!</h4>
+              <a href="https://hle.fan" target="_blank"><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Your Message to the team"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>21319046 - Nguyen Vu Hai Ngoc</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
